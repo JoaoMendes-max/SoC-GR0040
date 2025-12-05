@@ -1,0 +1,9 @@
+.cache/ 
+.hw/
+.ip/
+.runs/
+.sim/
+.gen/
+*.log
+*.jou
+*.str

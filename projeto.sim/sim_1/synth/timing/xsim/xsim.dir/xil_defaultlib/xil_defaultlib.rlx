@@ -1,0 +1,6 @@
+0.7
+2020.2
+May 21 2025
+22:59:56
+/home/mendes/projeto_1/projeto/projeto.sim/sim_1/synth/timing/xsim/soc_nopherif_tb_time_synth.v,1764367041,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sim_1/new/soc_nopherif_tb.v,,RAM32X1D_HD16;RAM32X1D_HD17;RAM32X1D_HD18;RAM32X1D_HD19;RAM32X1D_HD20;RAM32X1D_HD21;RAM32X1D_HD22;RAM32X1D_HD23;RAM32X1D_HD24;RAM32X1D_HD25;RAM32X1D_HD26;RAM32X1D_HD27;RAM32X1D_HD28;RAM32X1D_HD29;RAM32X1D_HD30;RAM32X1D_UNIQ_BASE_;addsub;blk_mem_gen_0;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_4_11;blk_mem_gen_0_blk_mem_gen_v8_4_11_synth;blk_mem_gen_1;blk_mem_gen_1_blk_mem_gen_generic_cstr;blk_mem_gen_1_blk_mem_gen_prim_width;blk_mem_gen_1_blk_mem_gen_prim_wrapper_init;blk_mem_gen_1_blk_mem_gen_top;blk_mem_gen_1_blk_mem_gen_v8_4_11;blk_mem_gen_1_blk_mem_gen_v8_4_11_synth;datapath;dist_mem_gen_0;dist_mem_gen_0_dist_mem_gen_v8_0_17;dist_mem_gen_0_dist_mem_gen_v8_0_17_synth;dist_mem_gen_0_dpram;glbl;gr0040;gr0041;ramh;raml;registerfile;soc,,,../../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sim_1/new/soc_nopherif_tb.v,1764349850,verilog,,,,soc_nopherif_tb,,,../../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,

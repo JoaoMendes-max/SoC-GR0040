@@ -1,0 +1,18 @@
+0.7
+2020.2
+May 21 2025
+22:59:56
+/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1764364875,verilog,,/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,,blk_mem_gen_0,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1764364874,verilog,,/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,blk_mem_gen_1,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1762773841,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/addsub.v,,dist_mem_gen_0,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sim_1/new/soc_nopherif_tb.v,1764349850,verilog,,,,soc_nopherif_tb,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/addsub.v,1762614059,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/control_unit.v,,addsub,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/control_unit.v,1764351468,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/datapath.v,,control_unit,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/datapath.v,1764366959,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0040.v,,datapath,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0040.v,1763911953,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0041.v,,gr0040,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0041.v,1764351468,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/ramh.v,,gr0041,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/ramh.v,1763909058,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/raml.v,,ramh,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/raml.v,1763909046,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/registerfile.v,,raml,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/registerfile.v,1764351468,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/soc.v,,registerfile,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/soc.v,1763912252,verilog,,/home/mendes/projeto_1/projeto/projeto.srcs/sim_1/new/soc_nopherif_tb.v,,soc,,,../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,

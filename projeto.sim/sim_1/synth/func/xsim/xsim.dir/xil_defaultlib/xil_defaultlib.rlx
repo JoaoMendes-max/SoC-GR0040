@@ -1,0 +1,6 @@
+0.7
+2020.2
+May 21 2025
+22:59:56
+/home/mendes/projeto/projeto/projeto.sim/sim_1/synth/func/xsim/soc_nopherif_tb_func_synth.v,1763977164,verilog,,/home/mendes/projeto/projeto/projeto.srcs/sim_1/new/soc_nopherif_tb.v,,addsub;blk_mem_gen_0;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_4_11;blk_mem_gen_0_blk_mem_gen_v8_4_11_synth;blk_mem_gen_1;blk_mem_gen_1_blk_mem_gen_generic_cstr;blk_mem_gen_1_blk_mem_gen_prim_width;blk_mem_gen_1_blk_mem_gen_prim_wrapper_init;blk_mem_gen_1_blk_mem_gen_top;blk_mem_gen_1_blk_mem_gen_v8_4_11;blk_mem_gen_1_blk_mem_gen_v8_4_11_synth;datapath;dist_mem_gen_0;dist_mem_gen_0_dist_mem_gen_v8_0_17;dist_mem_gen_0_dist_mem_gen_v8_0_17_synth;dist_mem_gen_0_dpram;glbl;gr0040;gr0041;ramh;raml;registerfile;soc,,,../../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,
+/home/mendes/projeto/projeto/projeto.srcs/sim_1/new/soc_nopherif_tb.v,1763688789,verilog,,,,soc_nopherif_tb,,,../../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef,,,,,

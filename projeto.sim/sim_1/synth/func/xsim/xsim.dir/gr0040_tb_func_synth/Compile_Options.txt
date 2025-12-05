@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "secureip" --snapshot "gr0040_tb_func_synth" "xil_defaultlib.gr0040_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

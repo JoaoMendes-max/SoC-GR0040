@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" \
+"../../../../projeto.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
+"../../../../projeto.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../projeto.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../projeto.srcs/sources_1/new/addsub.v" \
+"../../../../projeto.srcs/sources_1/new/control_unit.v" \
+"../../../../projeto.srcs/sources_1/new/datapath.v" \
+"../../../../projeto.srcs/sources_1/new/gr0040.v" \
+"../../../../projeto.srcs/sources_1/new/gr0041.v" \
+"../../../../projeto.srcs/sources_1/new/ramh.v" \
+"../../../../projeto.srcs/sources_1/new/raml.v" \
+"../../../../projeto.srcs/sources_1/new/registerfile.v" \
+"../../../../projeto.srcs/sources_1/new/soc.v" \
+"../../../../projeto.srcs/sim_1/new/soc_nopherif_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
