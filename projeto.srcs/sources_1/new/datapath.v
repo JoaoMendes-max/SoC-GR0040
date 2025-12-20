@@ -40,18 +40,18 @@ module datapath(
     input           pc_br, is_jal, 
     input           imm_update, word_off, sxi_sel,
     input  [1:0]    wb_sel,
-    output reg [15:0] pc,
-    output reg [15:0] sp,
     output [15:0]   i_ad,
     output [15:0]   d_ad,
-    output          z, n, co, v,
     output reg      ccz, ccn, ccc, ccv
 );
     wire [3:0] rd  = insn[11:8];
     wire [3:0] rs  = insn[7:4];
     wire [3:0] imm = insn[3:0];
     wire [15:0] dreg, sreg;
-    wire [15:0] wb_data;
+   wire [15:0] wb_data;
+    wire z, n, co, v;
+    reg [15:0] sp;
+    reg [15:0] pc;
     
     registerfile regfile(
         .clk(clk), .we(rf_we), .wr_ad(rd), 
@@ -137,6 +137,6 @@ module datapath(
             sp <= sp_next_val;
     end
 
-  assign d_ad = (is_push | is_pop) ? (is_push ? (sp - 16'd2) : sp) : sum;
+    assign d_ad = is_push ? sp_next_val : (is_pop ? sp : sum);
     
 endmodule

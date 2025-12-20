@@ -44,10 +44,12 @@
   output lw, lb;      // executing lw (lb)
   input  [`N:0] data; // results, load data
  
-   wire int_en;        // interrupt enabled
+  wire int_en;        // interrupt enabled
   reg int;            // call intr in progress
   reg int_active; // O escudo de proteção
   reg exiting;    // "Estou a sair agora"
+ 
+ //meter aqui modulo de interrupção  tipo que tem prioridades preempção e assim 
  
   // interrupt request rising edge detection
   reg int_req_last, int_pend;

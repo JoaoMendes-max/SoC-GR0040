@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/mendes/projeto_1/projeto/projeto.runs/blk_mem_gen_1_synth_1'
+HD_PWD='/home/mendes/porjetomendesf/projeto/projeto.runs/blk_mem_gen_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -89,8 +89,8 @@ module control_unit(
     wire [3:0] op = insn[15:12];
     wire [3:0] cond = insn[11:8];
     assign fn = `RI ? insn[7:4] : insn[3:0]; 
-    assign mem_re  = hit & (`LW | `LB | `POP);
-    assign mem_we  = hit & (`SW | `SB | `PUSH);
+    assign mem_re  = hit & (`LW | `LB | is_pop);
+    assign mem_we  = hit & (`SW | `SB | is_push);
     assign is_byte = hit & (`SB | `LB);
 
     wire valid_insn_ce = hit & insn_ce;
@@ -109,7 +109,7 @@ module control_unit(
     assign sxi_sel    = (`ADDI | `ALU);
     assign wb_sel[0] = (`LW | `LB) | (`ALU & (`LOG | `SR));
     assign wb_sel[1] = `JAL | (`ALU & (`LOG | `SR));
-
+    
     reg t;
 
     always @(*) begin
@@ -126,10 +126,12 @@ module control_unit(
             default: t = 0;
         endcase
     end
-
+                                                
     assign pc_br = hit & `Bx & (cond[0] ? ~t : t);
     assign is_jal = hit & `JAL;
-    assign int_en = hit & ~(`IMM | `JAL | (`ALU & (`ADC | `SBC | `CMP | `POP | `PUSH)));
+    assign int_en = hit & ~(`IMM | `JAL | (`ALU & (`ADC | `SBC 
+    | `CMP | `POP | `PUSH)));
+                    
     
     // Stack operation detection
     assign is_push = hit & (`RR & `PUSH);

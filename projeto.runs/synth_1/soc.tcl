@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/mendes/projeto_1/projeto/projeto.runs/synth_1/soc.tcl"
+  variable script "/home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/soc.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,11 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param general.usePosixSpawnForFork 1
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-22031-mendes-Katana-GF66-12UGS/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -68,37 +64,42 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/mendes/projeto_1/projeto/projeto.cache/wt [current_project]
-set_property parent.project_path /home/mendes/projeto_1/projeto/projeto.xpr [current_project]
+set_property webtalk.parent_dir /home/mendes/porjetomendesf/projeto/projeto.cache/wt [current_project]
+set_property parent.project_path /home/mendes/porjetomendesf/projeto/projeto.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
-set_property ip_output_repo /home/mendes/projeto_1/projeto/projeto.cache/ip [current_project]
+set_property ip_output_repo /home/mendes/porjetomendesf/projeto/projeto.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/ip/blk_mem_gen_0/memh.coe
-add_files /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/ip/blk_mem_gen_1/meml.coe
+add_files /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/ip/blk_mem_gen_0/memh.coe
+add_files /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/ip/blk_mem_gen_1/meml.coe
 read_verilog -library xil_defaultlib {
-  /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/addsub.v
-  /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/control_unit.v
-  /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/datapath.v
-  /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0040.v
-  /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0041.v
-  /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/ramh.v
-  /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/raml.v
-  /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/registerfile.v
-  /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/soc.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/addsub.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/control_unit.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/ctrl_dec.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/ctrl_enc.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/datapath.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/gr0040.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/gr0041.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/pario.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/pwm.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/ramh.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/raml.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/registerfile.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/timer.v
+  /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/soc.v
 }
-read_ip -quiet /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all /home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc]
+read_ip -quiet /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all /home/mendes/porjetomendesf/projeto/projeto.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc]
 
-read_ip -quiet /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all /home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+read_ip -quiet /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+set_property used_in_implementation false [get_files -all /home/mendes/porjetomendesf/projeto/projeto.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
 
-read_ip -quiet /home/mendes/projeto_1/projeto/projeto.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
-set_property used_in_implementation false [get_files -all /home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+read_ip -quiet /home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all /home/mendes/porjetomendesf/projeto/projeto.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -111,7 +112,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/mendes/projeto_1/projeto/projeto.srcs/utils_1/imports/synth_1/gr0040.dcp
+read_checkpoint -auto_incremental -incremental /home/mendes/porjetomendesf/projeto/projeto.srcs/utils_1/imports/synth_1/gr0040.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

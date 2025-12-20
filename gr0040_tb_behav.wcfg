@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="soc_nopherif_tb_time_synth.wdb" id="1">
+      <db_ref path="soc_nopherif_tb_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
             <top_module name="soc_nopherif_tb" />
@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="500.001 ns"></ZoomEndTime>
-      <Cursor1Time time="363.200 ns"></Cursor1Time>
+      <ZoomEndTime time="1,000.000 ns"></ZoomEndTime>
+      <Cursor1Time time="790.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="179"></NameColumnWidth>
-      <ValueColumnWidth column_width="70"></ValueColumnWidth>
+      <NameColumnWidth column_width="103"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="8" />
    <wvobject type="logic" fp_name="/soc_nopherif_tb/dut/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -33,65 +33,31 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/soc_nopherif_tb/dut/i_ad">
-      <obj_property name="ElementShortName">i_ad[9:1]</obj_property>
-      <obj_property name="ObjectShortName">i_ad[9:1]</obj_property>
+      <obj_property name="ElementShortName">i_ad[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_ad[15:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/soc_nopherif_tb/dut/insn">
-      <obj_property name="ElementShortName">insn[11:0]</obj_property>
-      <obj_property name="ObjectShortName">insn[11:0]</obj_property>
+      <obj_property name="ElementShortName">insn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">insn[15:0]</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/d_ad">
-      <obj_property name="ElementShortName">d_ad[9:1]</obj_property>
-      <obj_property name="ObjectShortName">d_ad[9:1]</obj_property>
+   <wvobject type="logic" fp_name="/soc_nopherif_tb/dut/int_req">
+      <obj_property name="ElementShortName">int_req</obj_property>
+      <obj_property name="ObjectShortName">int_req</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/p/p/dp/sp">
-      <obj_property name="ElementShortName">sp[9:3]</obj_property>
-      <obj_property name="ObjectShortName">sp[9:3]</obj_property>
+   <wvobject type="logic" fp_name="/soc_nopherif_tb/dut/timer/int_en">
+      <obj_property name="ElementShortName">int_en</obj_property>
+      <obj_property name="ObjectShortName">int_en</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/do_h">
-      <obj_property name="ElementShortName">do_h[7:0]</obj_property>
-      <obj_property name="ObjectShortName">do_h[7:0]</obj_property>
+   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/timer/cnt">
+      <obj_property name="ElementShortName">cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/\\dp/wb_data  ">
-      <obj_property name="ElementShortName">\\dp/wb_data  [15:0]</obj_property>
-      <obj_property name="ObjectShortName">\\dp/wb_data  [15:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/sp">
-      <obj_property name="ElementShortName">sp[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sp[2:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/di_0">
-      <obj_property name="ElementShortName">di_0[7:0]</obj_property>
-      <obj_property name="ObjectShortName">di_0[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/RAMH/addrb">
-      <obj_property name="ElementShortName">addrb[6:0]</obj_property>
-      <obj_property name="ObjectShortName">addrb[6:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/RAMH/dinb">
-      <obj_property name="ElementShortName">dinb[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dinb[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/RAMH/doutb">
-      <obj_property name="ElementShortName">doutb[7:0]</obj_property>
-      <obj_property name="ObjectShortName">doutb[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/RAML/addrb">
-      <obj_property name="ElementShortName">addrb[8:0]</obj_property>
-      <obj_property name="ObjectShortName">addrb[8:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/RAML/doutb">
-      <obj_property name="ElementShortName">doutb[7:0]</obj_property>
-      <obj_property name="ObjectShortName">doutb[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/RAML/web">
-      <obj_property name="ElementShortName">web[0:0]</obj_property>
-      <obj_property name="ObjectShortName">web[0:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/soc_nopherif_tb/dut/RAMH/web">
-      <obj_property name="ElementShortName">web[0:0]</obj_property>
-      <obj_property name="ObjectShortName">web[0:0]</obj_property>
+   <wvobject type="logic" fp_name="/soc_nopherif_tb/dut/timer/tick">
+      <obj_property name="ElementShortName">tick</obj_property>
+      <obj_property name="ObjectShortName">tick</obj_property>
    </wvobject>
 </wave_config>

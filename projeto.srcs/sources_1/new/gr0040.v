@@ -47,7 +47,6 @@ module gr0040(
     wire [3:0] fn;
     wire mem_re, mem_we, is_byte;
     wire ccz, ccn, ccc, ccv;
-    wire z, n, co, v;
     wire [`N:0] store_data; // ← NOVO
     wire is_push, is_pop;  
 
@@ -79,11 +78,9 @@ module gr0040(
         .pc_br(pc_br), .is_jal(is_jal), 
         .imm_update(imm_update), .word_off(word_off), .sxi_sel(sxi_sel),
         .wb_sel(wb_sel),
-        .pc(), .i_ad(i_ad), .d_ad(d_ad),
-        .z(z), .n(n), .co(co), .v(v),
+        .i_ad(i_ad), .d_ad(d_ad),
         .ccz(ccz), .ccn(ccn), .ccc(ccc), .ccv(ccv),
-        .is_push(is_push), .is_pop(is_pop),       
-        .sp()
+        .is_push(is_push), .is_pop(is_pop)
     );
    
     assign lw = mem_re & ~is_byte; // fica para load e pop

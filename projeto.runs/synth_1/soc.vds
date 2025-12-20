@@ -3,27 +3,27 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Fri Nov 28 21:56:42 2025
-# Process ID         : 24255
-# Current directory  : /home/mendes/projeto_1/projeto/projeto.runs/synth_1
+# Start of session at: Mon Dec 15 01:24:11 2025
+# Process ID         : 29869
+# Current directory  : /home/mendes/porjetomendesf/projeto/projeto.runs/synth_1
 # Command line       : vivado -log soc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc.tcl
-# Log file           : /home/mendes/projeto_1/projeto/projeto.runs/synth_1/soc.vds
-# Journal file       : /home/mendes/projeto_1/projeto/projeto.runs/synth_1/vivado.jou
+# Log file           : /home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/soc.vds
+# Journal file       : /home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/vivado.jou
 # Running On         : mendes-Katana-GF66-12UGS
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 22.04.5 LTS
 # Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
-# CPU Frequency      : 3556.929 MHz
+# CPU Frequency      : 1520.589 MHz
 # CPU Physical cores : 14
 # CPU Logical cores  : 20
 # Host memory        : 16455 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 18603 MB
-# Available Virtual  : 12601 MB
+# Available Virtual  : 13248 MB
 #-----------------------------------------------------------
 source soc.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental /home/mendes/projeto_1/projeto/projeto.srcs/utils_1/imports/synth_1/gr0040.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/mendes/projeto_1/projeto/projeto.srcs/utils_1/imports/synth_1/gr0040.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental /home/mendes/porjetomendesf/projeto/projeto.srcs/utils_1/imports/synth_1/gr0040.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/mendes/porjetomendesf/projeto/projeto.srcs/utils_1/imports/synth_1/gr0040.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top soc -part xc7z010clg400-1
 Starting synth_design
@@ -34,88 +34,120 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24307
+INFO: [Synth 8-7075] Helper process launched with PID 29911
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2236.660 ; gain = 448.711 ; free physical = 2754 ; free virtual = 10707
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2229.098 ; gain = 438.711 ; free physical = 2664 ; free virtual = 11263
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'soc' [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/soc.v:25]
-INFO: [Synth 8-6157] synthesizing module 'gr0041' [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0041.v:22]
-INFO: [Synth 8-6157] synthesizing module 'gr0040' [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0040.v:28]
-INFO: [Synth 8-6157] synthesizing module 'control_unit' [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/control_unit.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/control_unit.v:62]
-INFO: [Synth 8-6157] synthesizing module 'datapath' [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/datapath.v:22]
-INFO: [Synth 8-6157] synthesizing module 'registerfile' [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/registerfile.v:23]
-INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [/home/mendes/projeto_1/projeto/projeto.runs/synth_1/.Xil/Vivado-24255-mendes-Katana-GF66-12UGS/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (0#1) [/home/mendes/projeto_1/projeto/projeto.runs/synth_1/.Xil/Vivado-24255-mendes-Katana-GF66-12UGS/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'registerfile' (0#1) [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/registerfile.v:23]
-INFO: [Synth 8-6157] synthesizing module 'addsub' [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/addsub.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'addsub' (0#1) [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/addsub.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/datapath.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'gr0040' (0#1) [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0040.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'gr0041' (0#1) [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/gr0041.v:22]
-INFO: [Synth 8-6157] synthesizing module 'ramh' [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/ramh.v:23]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/mendes/projeto_1/projeto/projeto.runs/synth_1/.Xil/Vivado-24255-mendes-Katana-GF66-12UGS/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/mendes/projeto_1/projeto/projeto.runs/synth_1/.Xil/Vivado-24255-mendes-Katana-GF66-12UGS/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ramh' (0#1) [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/ramh.v:23]
-INFO: [Synth 8-6157] synthesizing module 'raml' [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/raml.v:23]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [/home/mendes/projeto_1/projeto/projeto.runs/synth_1/.Xil/Vivado-24255-mendes-Katana-GF66-12UGS/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [/home/mendes/projeto_1/projeto/projeto.runs/synth_1/.Xil/Vivado-24255-mendes-Katana-GF66-12UGS/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'raml' (0#1) [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/raml.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'soc' (0#1) [/home/mendes/projeto_1/projeto/projeto.srcs/sources_1/new/soc.v:25]
+WARNING: [Synth 8-10940] macro 'AN' is redefined [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/gr0040.v:22]
+INFO: [Synth 8-6157] synthesizing module 'soc' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/soc.v:32]
+INFO: [Synth 8-6157] synthesizing module 'gr0041' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/gr0041.v:22]
+INFO: [Synth 8-6157] synthesizing module 'gr0040' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/gr0040.v:28]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/control_unit.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/control_unit.v:62]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/datapath.v:22]
+INFO: [Synth 8-6157] synthesizing module 'registerfile' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/registerfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [/home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/.Xil/Vivado-29869-mendes-Katana-GF66-12UGS/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/.Xil/Vivado-29869-mendes-Katana-GF66-12UGS/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'registerfile' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/registerfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'addsub' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/addsub.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'addsub' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/addsub.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/datapath.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'gr0040' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/gr0040.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'gr0041' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/gr0041.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ramh' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/ramh.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/.Xil/Vivado-29869-mendes-Katana-GF66-12UGS/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/.Xil/Vivado-29869-mendes-Katana-GF66-12UGS/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ramh' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/ramh.v:23]
+INFO: [Synth 8-6157] synthesizing module 'raml' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/raml.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [/home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/.Xil/Vivado-29869-mendes-Katana-GF66-12UGS/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/.Xil/Vivado-29869-mendes-Katana-GF66-12UGS/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'raml' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/raml.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ctrl_enc' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/ctrl_enc.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl_enc' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/ctrl_enc.v:30]
+INFO: [Synth 8-6157] synthesizing module 'timer' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/timer.v:28]
+INFO: [Synth 8-6157] synthesizing module 'ctrl_dec' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/ctrl_dec.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl_dec' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/ctrl_dec.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/timer.v:28]
+INFO: [Synth 8-6157] synthesizing module 'pario' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/pario.v:28]
+WARNING: [Synth 8-7071] port 'rst' of module 'ctrl_dec' is unconnected for instance 'd' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/pario.v:39]
+WARNING: [Synth 8-7071] port 'ad' of module 'ctrl_dec' is unconnected for instance 'd' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/pario.v:39]
+WARNING: [Synth 8-7023] instance 'd' of module 'ctrl_dec' has 7 connections declared, but only 5 given [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/pario.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'pario' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/pario.v:28]
+INFO: [Synth 8-6157] synthesizing module 'pwm' [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/pwm.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'pwm' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/pwm.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'soc' (0#1) [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/soc.v:32]
+WARNING: [Synth 8-7129] Port ctrl[31] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[30] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[29] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[28] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[27] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[26] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[25] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[24] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[23] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[22] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[21] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[20] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[19] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ctrl[18] in module ctrl_dec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_ad[15] in module ctrl_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_ad[14] in module ctrl_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_ad[13] in module ctrl_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_ad[12] in module ctrl_enc is either unconnected or has no load
 WARNING: [Synth 8-7129] Port insn[15] in module datapath is either unconnected or has no load
 WARNING: [Synth 8-7129] Port insn[14] in module datapath is either unconnected or has no load
 WARNING: [Synth 8-7129] Port insn[13] in module datapath is either unconnected or has no load
 WARNING: [Synth 8-7129] Port insn[12] in module datapath is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2316.598 ; gain = 528.648 ; free physical = 2669 ; free virtual = 10623
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2310.035 ; gain = 519.648 ; free physical = 2586 ; free virtual = 11193
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2334.410 ; gain = 546.461 ; free physical = 2667 ; free virtual = 10622
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2327.848 ; gain = 537.461 ; free physical = 2582 ; free virtual = 11188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2334.410 ; gain = 546.461 ; free physical = 2667 ; free virtual = 10622
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2327.848 ; gain = 537.461 ; free physical = 2582 ; free virtual = 11188
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2334.410 ; gain = 0.000 ; free physical = 2667 ; free virtual = 10622
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2327.848 ; gain = 0.000 ; free physical = 2582 ; free virtual = 11188
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'p/p/dp/regfile/regfile'
-Finished Parsing XDC File [/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'p/p/dp/regfile/regfile'
-Parsing XDC File [/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'RAMH/memh'
-Finished Parsing XDC File [/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'RAMH/memh'
-Parsing XDC File [/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'RAML/meml'
-Finished Parsing XDC File [/home/mendes/projeto_1/projeto/projeto.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'RAML/meml'
+Parsing XDC File [/home/mendes/porjetomendesf/projeto/projeto.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'p/p/dp/regfile/regfile'
+Finished Parsing XDC File [/home/mendes/porjetomendesf/projeto/projeto.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'p/p/dp/regfile/regfile'
+Parsing XDC File [/home/mendes/porjetomendesf/projeto/projeto.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'RAML/meml'
+Finished Parsing XDC File [/home/mendes/porjetomendesf/projeto/projeto.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'RAML/meml'
+Parsing XDC File [/home/mendes/porjetomendesf/projeto/projeto.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'RAMH/memh'
+Finished Parsing XDC File [/home/mendes/porjetomendesf/projeto/projeto.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'RAMH/memh'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.148 ; gain = 0.000 ; free physical = 2671 ; free virtual = 10626
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2451.586 ; gain = 0.000 ; free physical = 2577 ; free virtual = 11196
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.184 ; gain = 0.000 ; free physical = 2671 ; free virtual = 10625
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2451.621 ; gain = 0.000 ; free physical = 2577 ; free virtual = 11196
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2454.184 ; gain = 666.234 ; free physical = 2701 ; free virtual = 10657
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2451.621 ; gain = 661.234 ; free physical = 2348 ; free virtual = 11098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2462.152 ; gain = 674.203 ; free physical = 2701 ; free virtual = 10657
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2459.590 ; gain = 669.203 ; free physical = 2348 ; free virtual = 11098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2462.152 ; gain = 674.203 ; free physical = 2701 ; free virtual = 10657
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2459.590 ; gain = 669.203 ; free physical = 2348 ; free virtual = 11098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2462.152 ; gain = 674.203 ; free physical = 2704 ; free virtual = 10661
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2459.590 ; gain = 669.203 ; free physical = 2407 ; free virtual = 11113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -123,23 +155,27 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input   18 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
 	   2 Input   16 Bit       Adders := 3     
 +---XORs : 
 	   2 Input     16 Bit         XORs := 1     
 	   2 Input      1 Bit         XORs := 1     
 	   4 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               16 Bit    Registers := 2     
+	               16 Bit    Registers := 6     
 	               12 Bit    Registers := 1     
-	                1 Bit    Registers := 12    
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
 +---Muxes : 
 	   2 Input   18 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 12    
+	   2 Input   16 Bit        Muxes := 22    
 	   3 Input   16 Bit        Muxes := 1     
 	   2 Input   12 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 7     
 	   2 Input    4 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 8     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 12    
+	   4 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -156,26 +192,27 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'io_ad_reg' and it is trimmed from '16' to '12' bits. [/home/mendes/porjetomendesf/projeto/projeto.srcs/sources_1/new/soc.v:157]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2462.152 ; gain = 674.203 ; free physical = 2696 ; free virtual = 10659
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2459.590 ; gain = 669.203 ; free physical = 2451 ; free virtual = 11114
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2495.152 ; gain = 707.203 ; free physical = 2609 ; free virtual = 10572
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2499.590 ; gain = 709.203 ; free physical = 2373 ; free virtual = 10998
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2495.152 ; gain = 707.203 ; free physical = 2609 ; free virtual = 10572
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2499.590 ; gain = 709.203 ; free physical = 2373 ; free virtual = 10998
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2524.199 ; gain = 736.250 ; free physical = 2582 ; free virtual = 10545
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2528.637 ; gain = 738.250 ; free physical = 2352 ; free virtual = 10977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -193,37 +230,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2681.012 ; gain = 893.062 ; free physical = 2445 ; free virtual = 10408
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.449 ; gain = 892.062 ; free physical = 2227 ; free virtual = 10846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2681.012 ; gain = 893.062 ; free physical = 2445 ; free virtual = 10408
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.449 ; gain = 892.062 ; free physical = 2227 ; free virtual = 10846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2681.012 ; gain = 893.062 ; free physical = 2447 ; free virtual = 10410
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.449 ; gain = 892.062 ; free physical = 2227 ; free virtual = 10846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2681.012 ; gain = 893.062 ; free physical = 2447 ; free virtual = 10410
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.449 ; gain = 892.062 ; free physical = 2227 ; free virtual = 10846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2681.012 ; gain = 893.062 ; free physical = 2449 ; free virtual = 10412
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.449 ; gain = 892.062 ; free physical = 2227 ; free virtual = 10846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2681.012 ; gain = 893.062 ; free physical = 2449 ; free virtual = 10412
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.449 ; gain = 892.062 ; free physical = 2227 ; free virtual = 10846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -245,42 +282,43 @@ Report Cell Usage:
 |1     |blk_mem_gen  |     2|
 |3     |dist_mem_gen |     1|
 |4     |BUFG         |     1|
-|5     |CARRY4       |    15|
-|6     |LUT1         |    12|
-|7     |LUT2         |    10|
-|8     |LUT3         |    67|
-|9     |LUT4         |    22|
-|10    |LUT5         |    77|
-|11    |LUT6         |    62|
+|5     |CARRY4       |    29|
+|6     |LUT1         |    21|
+|7     |LUT2         |    28|
+|8     |LUT3         |    75|
+|9     |LUT4         |    87|
+|10    |LUT5         |    88|
+|11    |LUT6         |    90|
 |12    |MUXF7        |     1|
-|13    |FDRE         |    41|
-|14    |FDSE         |     9|
-|15    |IBUF         |     7|
+|13    |FDRE         |   113|
+|14    |FDSE         |    25|
+|15    |IBUF         |    10|
+|16    |OBUF         |     9|
 +------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2681.012 ; gain = 893.062 ; free physical = 2449 ; free virtual = 10412
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.449 ; gain = 892.062 ; free physical = 2227 ; free virtual = 10846
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2681.012 ; gain = 773.289 ; free physical = 2451 ; free virtual = 10414
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2681.020 ; gain = 893.062 ; free physical = 2451 ; free virtual = 10414
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2682.449 ; gain = 768.289 ; free physical = 2226 ; free virtual = 10845
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2682.457 ; gain = 892.062 ; free physical = 2226 ; free virtual = 10845
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2681.020 ; gain = 0.000 ; free physical = 2578 ; free virtual = 10541
-INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:00 . Memory (MB): peak = 2682.457 ; gain = 0.000 ; free physical = 2385 ; free virtual = 11004
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2737.039 ; gain = 0.000 ; free physical = 2626 ; free virtual = 10589
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2738.477 ; gain = 0.000 ; free physical = 2458 ; free virtual = 11013
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 6d3da267
+Synth Design complete | Checksum: 5ea9f1bf
 INFO: [Common 17-83] Releasing license: Synthesis
-44 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+54 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 2737.074 ; gain = 1109.570 ; free physical = 2625 ; free virtual = 10588
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1848.044; main = 1848.044; forked = 274.275
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3424.840; main = 2737.043; forked = 962.684
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.051 ; gain = 0.000 ; free physical = 2625 ; free virtual = 10588
-INFO: [Common 17-1381] The checkpoint '/home/mendes/projeto_1/projeto/projeto.runs/synth_1/soc.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 2738.512 ; gain = 1105.539 ; free physical = 2457 ; free virtual = 11012
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1864.434; main = 1864.434; forked = 274.333
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3422.277; main = 2738.480; forked = 962.684
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2762.488 ; gain = 0.000 ; free physical = 2457 ; free virtual = 11012
+INFO: [Common 17-1381] The checkpoint '/home/mendes/porjetomendesf/projeto/projeto.runs/synth_1/soc.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file soc_utilization_synth.rpt -pb soc_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 28 21:57:01 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 15 01:24:34 2025...

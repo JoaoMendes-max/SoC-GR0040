@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1764367001" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/gr0040.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1765761849" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/gr0040.dcp">
+  <File Type="VDS-TIMING-PB" Name="soc_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="soc_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="soc.dcp"/>
-  <File Type="RDS-RDS" Name="soc.vds"/>
-  <File Type="RDS-UTIL" Name="soc_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="soc_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="soc.tcl"/>
+  <File Type="RDS-UTIL" Name="soc_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="soc_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="soc.vds"/>
   <File Type="REPORTS-TCL" Name="soc_reports.tcl"/>
+  <File Type="PA-TCL" Name="soc.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/addsub.v">
@@ -16,6 +19,20 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/control_unit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ctrl_dec.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ctrl_enc.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -43,6 +60,20 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/pario.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pwm.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/ramh.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -58,6 +89,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/registerfile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/timer.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -113,7 +151,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_1"/>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
 </GenRun>

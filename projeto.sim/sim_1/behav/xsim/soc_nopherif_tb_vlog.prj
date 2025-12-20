@@ -5,13 +5,18 @@ verilog xil_defaultlib  --include "../../../../../../../../tools/Xilinx/2025.1/d
 "../../../../projeto.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
 "../../../../projeto.srcs/sources_1/new/addsub.v" \
 "../../../../projeto.srcs/sources_1/new/control_unit.v" \
+"../../../../projeto.srcs/sources_1/new/ctrl_dec.v" \
+"../../../../projeto.srcs/sources_1/new/ctrl_enc.v" \
 "../../../../projeto.srcs/sources_1/new/datapath.v" \
 "../../../../projeto.srcs/sources_1/new/gr0040.v" \
 "../../../../projeto.srcs/sources_1/new/gr0041.v" \
+"../../../../projeto.srcs/sources_1/new/pario.v" \
+"../../../../projeto.srcs/sources_1/new/pwm.v" \
 "../../../../projeto.srcs/sources_1/new/ramh.v" \
 "../../../../projeto.srcs/sources_1/new/raml.v" \
 "../../../../projeto.srcs/sources_1/new/registerfile.v" \
 "../../../../projeto.srcs/sources_1/new/soc.v" \
+"../../../../projeto.srcs/sources_1/new/timer.v" \
 "../../../../projeto.srcs/sim_1/new/soc_nopherif_tb.v" \
 
 # compile glbl module

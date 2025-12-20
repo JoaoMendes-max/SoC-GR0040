@@ -127,7 +127,7 @@ output wire rstb_busy;
     .C_INIT_FILE_NAME("blk_mem_gen_1.mif"),
     .C_INIT_FILE("blk_mem_gen_1.mem"),
     .C_USE_DEFAULT_DATA(1),
-    .C_DEFAULT_DATA("0"),
+    .C_DEFAULT_DATA("00"),
     .C_HAS_RSTA(1),
     .C_RST_PRIORITY_A("CE"),
     .C_RSTRAM_A(0),

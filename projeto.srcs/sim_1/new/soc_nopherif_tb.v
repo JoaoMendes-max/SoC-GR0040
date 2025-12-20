@@ -23,15 +23,17 @@ module soc_nopherif_tb();
     // Clock e reset
     reg clk;
     reg rst;
-    reg int_req;
-    reg [3:0] int_req_id;
+    reg [7:0] par_i;
+    wire [7:0] par_o;
+    wire  pwm_o;
+    
 
     // Instanciação do DUT (Device Under Test)
     soc dut (
         .clk(clk),
         .rst(rst),
-        .int_req(int_req),
-        .int_req_id(int_req_id)
+        .par_i(par_i),.par_o(par_o),
+        .pwm_o(pwm_o)
         
     );
 
@@ -40,14 +42,14 @@ module soc_nopherif_tb();
     begin 
         clk<=1'b0;
         forever
-        #10 clk=~clk;
+        #10 clk=~clk;//50MHZ
     end
 
     initial begin
         // Inicialização
-        int_req=1'b0;
-        int_req_id=4'b0000;
-        rst <= 1;
+
+        rst = 1;
+        par_i=8'd1;
 
         repeat (15) @(posedge clk);
         rst = 0; // solta o reset
@@ -59,7 +61,7 @@ module soc_nopherif_tb();
         repeat (1) @(posedge clk);
         int_req=1'b0;*/  
              
-        #210
+        #1000
         
         $display("✅ Simulação terminada com sucesso");
         $finish;
